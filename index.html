@@ -11,7 +11,9 @@
     <div class="screen">
         <div class="sidebar">
             <label for="changeBackgroundColor">Change background color</label>
-            <input type="text" name="changeBackgroundColor" id="colorChangeIn">
+            <br>
+            <input type="color" id="colorChangePal" onchange="syncColor(event)">      
+            <input type="text" name="changeBackgroundColor" id="colorChangeIn" onchange="syncColor(event)" >
             <button id="colorBtn"onclick="changeColor()">Change color</button>
             <br><br>
 
@@ -28,6 +30,8 @@
             <br><br><br>
             <p>add HTML element to the list of elements</p>
             <input type="text" id="newElIn"> <button onclick="addElToList()">add</button>
+            <br><br><br>
+
         </div>
         <div class="hovedside">
             <div id="textCont">

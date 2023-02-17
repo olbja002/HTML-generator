@@ -2,6 +2,7 @@ const colorInput = document.getElementById("colorChangeIn");
 const elementInput = document.getElementById("ElementChangeIn");
 const textInput = document.getElementById("textChangeIn");
 const newElIn = document.getElementById("newElIn")
+const colorChangePal = document.getElementById("colorChangePal")
 
 function addTextElement(elementInput, textInput) {
     // alert(elementInput);   // Alerts value for you to make sure they contain whats expected
@@ -77,4 +78,14 @@ function underline(e) {
         return;
     }
     e.target.style.textDecoration = "underline";
+}
+
+function syncColor(e) {
+    if (
+        e.target == document.getElementById("colorChangePal")
+    ) {
+        colorInput.value = colorChangePal.value
+    } else {
+        colorChangePal.value = colorInput.value
+    }
 }
