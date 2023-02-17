@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    background-color: white;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sidebar {
+    width: fit-content;
+    background-color: rgba(190, 190, 190, 0.4);
+    padding: 1%;
+}
+
+.hovedside {
+    width: 100%;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML-Generator</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="sidebar">
+            <label for="changeBackgroundColor">Change background color</label>
+            <input type="text" name="changeBackgroundColor" id="colorChangeIn">
+            <button id="colorBtn"onclick="changeColor()">Change color</button>
+            <br><br>
+
+            <p>Add a new HTML Element.</p>
+            <!-- skal brukes til å velge element.
+            Man skal også kunne velge innhold i elementet -->
+            <select name="choose HTML Element" id="ElementChangeIn">
+                <option value="h1">h1</option>
+                <option value="h2">h2</option>
+                <option value="p">p</option>
+            </select> 
+            <input type="text" id="textChangeIn">
+            <button onclick="addTextElement(elementInput.value, textInput.value)" id="textElBtn">Add new text element</button>
+            <br><br><br>
+            <p>add HTML element to the list of elements</p>
+            <input type="text" id="newElIn"> <button onclick="addElToList()">add</button>
+        </div>
+        <div class="hovedside">
+            <div id="textCont">
+                <p onclick="underline(event)">This is a paragraph.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
