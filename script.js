@@ -54,8 +54,8 @@ newElIn.addEventListener("keypress", function(event) {
     }
 })
 
-// Adds event listener for when the "enter" key is pressed in the "colorInput" Element
-// this event listener stops default actions, then clicks on the button with "ColorBtn" id
+// Adds event listener for when the "enter" key is pressed in the "colorInput" Element.
+// this event listener stops default actions, then clicks on the button with "ColorBtn" id.
 colorInput.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         event.preventDefault(); // stops default actions
