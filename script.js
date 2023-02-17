@@ -71,15 +71,6 @@ textInput.addEventListener("keypress", function(event) {
     }
 });
 
-// function underline(e) {
-//     console.log(e.target.style.textDecoration) 
-//     if (e.target.style.textDecoration == "none") {
-//         e.target.style.textDecoration = "underline";
-//     } else {
-//         e.target.style.textDecoration = "none";
-//     }
-// }
-
 function underline(e) {
     if (e.target.style.textDecoration == "underline") {
         e.target.style.textDecoration = "none";
