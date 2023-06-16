@@ -4,6 +4,7 @@ const textInput = document.getElementById("textChangeIn");
 const newElIn = document.getElementById("newElIn")
 const colorChangePal = document.getElementById("colorChangePal")
 
+
 function addTextElement(elementInput, textInput) {
     // alert(elementInput);   // Alerts value for you to make sure they contain whats expected
     // alert(textInput);      // -||-
@@ -16,8 +17,16 @@ function addTextElement(elementInput, textInput) {
         text.appendChild(node);
         const textCont = document.getElementById("textCont");
         textCont.appendChild(text);
+        
+        // let textInputEl = document.querySelector("#textChangeIn")  //lukas sin shit
+        // textInputEl.style.position = "relative"
+        // let pxbottomEl = document.querySelector("#pxbottom")
+        // let pxleftEl = document.querySelector("#pxleft")
+        // textInputEl.style.left = pxleftEl.value + "px"
+        // textInputEl.style.bottom = pxbottomEl.value + "px"
     }
 }
+
 
 var recentColorInput;
 var recentBackgroundColor;
@@ -84,8 +93,9 @@ function syncColor(e) {
     if (
         e.target == document.getElementById("colorChangePal")
     ) {
-        colorInput.value = colorChangePal.value
+        colorInput.value = colorChangePal.value;
     } else {
-        colorChangePal.value = colorInput.value
+        colorChangePal.value = colorInput.value;
     }
+    document.getElementById("colorBtn").click();
 }
